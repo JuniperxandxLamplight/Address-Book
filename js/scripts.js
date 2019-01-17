@@ -8,7 +8,7 @@ $(function(){
     var email = $("#email").val();
     var address = $("#address").val();
 
-    $("ul").append("<li class='col-md-4'><img src='imgs/person.jpg'><h3>" + firstName + " " + lastName + "<h3></li>");
+    $("ul").append("<li class='col-md-4'><img src='imgs/person.jpg'><p>" + firstName + " " + lastName + "</p></li>");
     $("ul").children('li').last().click(function(){
       $(".contact-window").slideDown('slow');
       $('.contact-name').text(firstName + ' ' + lastName);
